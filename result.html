@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestiMate Result</title>
+</head>
+<style>
+    body {
+       background-color: rgb(43, 43, 43);
+       color: white;
+       font-family: 'Roboto', sans-serif;
+   }
+   h1, h2, p {
+       color: white;
+   }
+   input[type="text"], select, button {
+       background-color: #333;
+       color: white;
+       border: 1px solid white;
+       padding: 5px;
+   }
+   button {
+       cursor: pointer;
+   }
+   ul {
+       list-style-type: none;
+       padding: 0;
+   }
+   li {
+       margin-bottom: 5px;
+   }
+   a {
+       color: white;
+       text-decoration: none;
+   }
+   .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0064b1; /* Example background color */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+</style>
+<body>
+    <h1>InvestiMate Result</h1>
+    <p>{{ result }}</p>
+
+
+
+    <a href="/" class="button">New InvestiMate Analysis</a>
+</body>
+</html>

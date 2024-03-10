@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestiMate AI</title>
+    <style>
+         body {
+            background-color: rgb(43, 43, 43);
+            color: rgb(224, 224, 224);
+            font-family: 'Roboto', sans-serif;
+        }
+        h1 {
+            color:rgb(38, 168, 255);
+        }
+        h2, p {
+            color: white;
+        }
+        input[type="text"], select, button {
+            background-color: #333;
+            color: white;
+            border: 1px solid white;
+            padding: 5px;
+        }
+        button {
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0064b1; /* Example background color */
+            color: #fff; /* Text color */
+            font-size: 16px; /* Font size */
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+.button:hover {
+    background-color: rgb(0, 86, 179); /* Darker color on hover */
+}
+    </style>
+</head>
+<body>
+    <h1>InvestiMate</h1>
+    <h4>Hello, this is InvestiMate a financial AI that specializes in company analysis through business strategy, financial statements, and market performance to make smarter investment decisions!</h4>
+    
+    <h2>Start a New Analysis</h2>
+    <form action="/" method="POST">
+        <label for="symbol">Enter Stock Symbol:</label>
+        <input type="text" id="symbol" name="symbol" required>
+        <br><br>
+        <label for="analysis_type">Select Analysis Type:</label>
+        <select id="analysis_type" name="analysis_type" required>
+            <option value="earnings">Earnings Analysis</option>
+            <option value="company">Company Overview Analysis</option>
+            <option value="market">Market Performance Analysis</option>
+        </select>
+        <br><br>
+        <button type="submit">Start Analysis</button>
+    </form>
+
+    <h2>Other Options</h2>
+    <ul>
+        <li><a href="/home" class="button">About InvestiMate</a></li>
+
+    </ul>
+</body>
+</html>
